@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bt2.css">
+</head>
+<script>
+    function soNguyenTo(num) {
+        if (num <= 1) {
+            return false;
+        }
+        for (let i = 2; i <= Math.sqrt(num); i++) {
+            if (num % i === 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+    function kiemTra() {
+        const num = parseInt(document.getElementById('numberInput').value);
+        const resultElement = document.getElementById('result');
+        if (isNaN(num)) {
+            resultElement.textContent = "Nhập một số hợp lệ.";
+            return;
+        }
+        if (soNguyenTo(num)) {
+            resultElement.textContent = num + " là số nguyên tố.";
+        } 
+        else {
+            resultElement.textContent = num + " không phải là số nguyên tố.";
+        }
+    }
+</script>
+<body>
+   <div class="bang">
+    <h1>Kiểm Tra Số Nguyên Tố</h1>
+    <div class="nhap">
+        Nhập một số: <input type="number" id="numberInput" />
+    <button onclick="kiemTra()">Kiểm tra</button>
+    </div>
+    <p id="result"></p>
+   </div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+.chuyen{
+    background-color:rgb(152, 125, 154);
+    text-align: center;
+    width: 600px;
+    margin: 0 auto;
+    height: 500px;
+    padding: 5px;
+    font-size: 20px;
+}
+h1{
+    color: aliceblue;
+}
+.đo{
+    text-align: center;
+    background-color:rgb(187, 154, 177);
+    width: 490px ;
+    margin: 0 auto;
+    padding: 20px;
+    height: 140px;
+}
+.nhiet{
+    text-align: center;
+    background-color:rgb(187, 154, 177);
+    width: 490px ;
+    margin: 0 auto;
+    padding: 20px;
+    height: 150px;
+}
+.do1{
+    text-align: center;
+    background-color:rgb(238, 206, 185);
+    width: 440px ;
+    margin: 0 auto;
+    padding: 5px;
+}
+.nhiet1{
+    text-align: center;
+    background-color:rgb(238, 206, 185);
+    width: 440px ;
+    margin: 0 auto;
+    padding: 5px;
+}

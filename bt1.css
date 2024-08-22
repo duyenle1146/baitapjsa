@@ -1,0 +1,16 @@
+.tinhtong{
+    background-color: rgb(162, 202, 113);
+    text-align: center;
+    width: 500px;
+    margin: 0 auto;
+    height: 220px;
+    padding: 5px;
+    font-size: 20px;
+}
+.nhapso{
+    text-align: center;
+    background-color:rgb(190, 220, 116);
+    width: 400px ;
+    margin: 0 auto;
+    padding: 10px;
+}

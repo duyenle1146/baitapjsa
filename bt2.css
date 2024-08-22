@@ -1,0 +1,22 @@
+.bang{ 
+    background-color:rgb(45, 149, 150);
+    text-align: center;
+    width: 500px;
+    margin: 0 auto;
+    height: 210px;
+    padding: 5px;
+    font-size: 20px;
+}
+.nhap{
+    text-align: center;
+    background-color:rgb(154, 208, 194);
+    width: 400px ;
+    margin: 0 auto;
+    padding: 10px;
+}
+h1{
+    color: aliceblue;
+}
+p{
+    color: aliceblue;
+}

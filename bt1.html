@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bt1.css">
+</head>
+<script>
+    function tinhTong() {
+        var n = parseInt(document.getElementById("numberInput").value);
+        var tong = 0;
+        var tongSo = "";
+        for (var i = 1; i <= n; i++) {
+            tong += i;
+            if (i === n) {
+                tongSo += i + "=";
+            } 
+            else {
+                tongSo += i + "+";
+            }
+        }
+        document.getElementById("result").innerHTML = tongSo + tong;
+    }
+</script>
+<body>
+    <div class="tinhtong">
+        <h1>Tính Tổng Từ 1 Đến N</h1>
+    <div class="nhapso">
+        Nhập một số: <input type="number" id="numberInput" min="1" required>
+        <button onclick="tinhTong()">Tính</button>
+    </div>
+    <p id="result"></p>
+    </div>
+</body>
+</html>

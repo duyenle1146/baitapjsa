@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bt3.css">
+</head>
+<script>
+    function doCelsius() {
+        const celsius = parseFloat(document.getElementById('celsius').value);
+        const fahrenheit = (celsius * 9/5) + 32;
+        document.getElementById('celsiusResult').innerText = `${celsius}°C = ${fahrenheit.toFixed(2)}°F`;
+    }
+    function doFahrenheit() {
+        const fahrenheit = parseFloat(document.getElementById('fahrenheit').value);
+        const celsius = (fahrenheit - 32) * 5/9;
+        document.getElementById('fahrenheitResult').innerText = `${fahrenheit}°F = ${celsius.toFixed(2)}°C`;
+    }
+</script>
+<body>
+   <div class="chuyen"> 
+    <h1>Chuyển Đổi Nhiệt Độ</h1>
+    <div class="đo">
+        <h2>Độ Celsius sang Độ Fahrenheit</h2>
+        <div class="do1">
+            Nhập một số: <input type="number" id="celsius">
+        <button onclick="doCelsius()">Chuyển đổi</button>
+        </div>
+        <div class="result" id="celsiusResult"></div>
+    </div>
+    <div class="nhiet">
+        <h2>Độ Fahrenheit sang Độ Celsius</h2>
+        <div class="nhiet1">
+            Nhập một số: <input type="number" id="fahrenheit">
+        <button onclick="doFahrenheit()">Chuyển đổi</button>
+        </div>
+        <div class="result" id="fahrenheitResult"></div>
+    </div>
+</div>
+</body>
+</html>
